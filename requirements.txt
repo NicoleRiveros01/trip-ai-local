@@ -1,0 +1,6 @@
+Flask
+Flask-SQLAlchemy
+gunicorn
+google-genai
+requests
+python-dotenv
