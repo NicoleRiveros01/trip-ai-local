@@ -449,7 +449,7 @@ def generar():
         future = executor.submit(llamar_ia)
         try:
             # Si en 120 segundos la IA de Google no responde, saltamos al respaldo local de inmediato
-            itinerario = future.result(timeout=120)
+            itinerario = future.result(timeout=3)
             print("✨ ¡IA respondió con éxito!")
         except Exception as e:
             print(f"⚡ [CAMBIO INMEDIATO A RESPALDO LOCAL]: {str(e)}")
